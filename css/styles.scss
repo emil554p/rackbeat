@@ -1,10 +1,148 @@
 $fontFam: Helvetica Neue;
-$primary: #dbf227;
+$primary: #B6EFAF;
 
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-div{
-  font-family: "Helvetica Neue";
+img{
+  width: 100%;
+}
+
+body{
+  font-family: Helvetica!important;
+  background: $primary;
+  .footer{
+    background: black!important;
+    a {
+      color: #ffffff;
+      p {
+        font-size: 0.65rem;
+        padding-right: 0.5rem;
+        border-right: solid white 0.1rem;
+      }
+    }
+    &__some{
+      margin-left: 50% !important;
+      margin-right: 50% !important;
+      a{
+        color: $primary;
+      }
+    }
+    &__address {
+      &__map {
+        &--nf {
+          p {
+            border-right: none !important;
+          }
+        }
+      }
+    }
+    &__contact{
+      &__cookies{
+        p{
+          border-right: none !important;
+        }
+      }
+    }
+  }
+  .container-fluid{
+    .navbar{
+      background: black!important;
+      padding: 0;
+      width: 100%;
+      a{
+        width: 80%;
+        img{
+          width: 80%;
+          margin-left: 5%;
+          background-color: black;
+        }
+      }
+      ul{
+        width: 100%;
+        li{
+          background: $primary;
+          .nav-link{
+            color: black;
+            font-weight: bold;
+            margin: 0;
+            margin-left: 10%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .container-fluid{
+
+    .navbar{
+      display: block;
+        .navbar-brand{
+          width: 100%;
+          margin: 0;
+          img{
+            width: 80%;
+            margin-left: 10%!important;
+          }
+        }
+      ul{
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 80%!important;
+        margin-left: 10%;
+        li{
+          background: black!important;
+          .nav-link{
+            background: white;
+            border-radius: 5px;
+            width: 110px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
 }
 
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+
+@media screen and(min-width: 1200px){
+
+  .container-fluid{
+
+    .navbar{
+      ul{
+        justify-content: space-around;
+        margin-bottom: 20px;
+        width: 80%!important;
+        margin-left: 10%;
+        li{
+          background: black!important;
+          .nav-link{
+            background: black!important;
+            border-radius: 5px;
+            width: 110px;
+            height: auto;
+            color: $primary!important;
+          }
+        }
+      }
+    }
+  }
+
+
+
+.footer {
+    &__address {
+      &__map {
+        &--nf {
+          p {
+            border-right: solid white 0.1rem !important;
+          }
+        }
+      }
+    }
+  }
+}
