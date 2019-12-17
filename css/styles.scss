@@ -7,9 +7,90 @@ img{
   width: 100%;
 }
 
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
 body{
-  font-family: Helvetica!important;
+  margin: 0;
+  font-family: Helvetica;
   background: $primary;
+  h3{
+    font-weight: bold;
+  }
+  .carousel-inner{
+    .carousel-item{
+
+    }
+  }
+  .btn-dark{
+    background-color: black;
+  }
+  .carousel-indicators{
+    margin-left: -20%;
+    bottom: -20px;
+    li{
+      background-color: black;
+      height: 20px;
+      width: 20px;
+      border-radius: 100%;
+    }
+  }
+  .åbningstider{
+    background-color: black;
+    border-bottom: 80px solid $primary;
+    padding-left: 45%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    h4{
+      color: white;
+    }
+    h5{
+      color: $primary;
+    }
+  }
+  .hatDrengWrapper {
+    position: relative;
+    .hatDreng {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      width: 40%;
+
+
+    }
+  }
+  .fablab{
+    background-color: black;
+    padding: 15% 50% 5% 5%;
+    border-bottom: 80px solid $primary;
+    p{
+      color: white;
+    }
+  }
+  .threeDprinterWrapper{
+    position: relative;
+    .threeDprinter{
+      position: absolute;
+      bottom: 0;
+      left: 55%;
+      right: 0;
+      display: flex;
+      width: 40%;
+    }
+  }
+  .hjaelp{
+    background-color: black;
+    padding: 15% 50% 5% 5%;
+    border-bottom: 80px solid $primary;
+    p{
+      color: white;
+    }
+  }
   .footer{
     background: black!important;
     a {
@@ -45,6 +126,7 @@ body{
     }
   }
   .container-fluid{
+    width: 100%;
     .navbar{
       background: black!important;
       padding: 0;
