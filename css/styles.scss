@@ -12,10 +12,87 @@ img{
   margin-right: 0;
 }
 
+.Overskrift2{
+  text-align: center;
+  font-size: 60px;
+}
+
+.Overskrift{
+  text-align: center;
+  font-size: 40px;
+}
+
+.underoverskrift{
+  padding: 0px 40px 0px 40px;
+}
+
+.Sort{
+  background-color: black;
+}
+.Grøn{
+  background-color: #B6EFAF ;
+}
+
+.knapsort{
+  background-color:$primary;
+  border-radius: 16px;
+  border:1px solid $primary;
+  display:inline-block;
+  cursor:pointer;
+  color:black;
+  font-size:15px;
+  padding:7px 38px;
+  text-decoration:none;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  width: 180px;
+  font-weight: bold;
+}
+
+.knapgrøn{
+  background-color:black;
+  border-radius: 16px;
+  border:1px solid black;
+  display:inline-block;
+  cursor:pointer;
+  color:white;
+  font-size:15px;
+  padding:7px 38px;
+  text-decoration:none;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  width: 180px;
+  font-weight: bold;
+}
+.maskiner{
+  height: 200px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 body{
   margin: 0;
   font-family: Helvetica;
   background: $primary;
+  h1{
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .fa-envelope-square{
+    font-size: 3rem;
+  }
+  .omFab{
+    padding: 20%;
+    .voresFablab{
+      font-weight: bold;
+      width: 100%;
+      font-size: 40px;
+      border-radius: 10px;
+    }
+  }
   h3{
     font-weight: bold;
   }
@@ -42,8 +119,8 @@ body{
     border-bottom: 80px solid $primary;
     padding-left: 45%;
     padding-right: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     h4{
       color: white;
     }
@@ -58,15 +135,15 @@ body{
       bottom: 0;
       left: 0;
       right: 0;
-      display: flex;
       width: 40%;
+      max-width: 200px;
 
 
     }
   }
   .fablab{
     background-color: black;
-    padding: 15% 50% 5% 5%;
+    padding: 50px 50% 20px 5%;
     border-bottom: 80px solid $primary;
     p{
       color: white;
@@ -77,18 +154,24 @@ body{
     .threeDprinter{
       position: absolute;
       bottom: 0;
-      left: 55%;
-      right: 0;
-      display: flex;
+      right: 5%;
       width: 40%;
+      max-width: 200px;
     }
   }
   .hjaelp{
     background-color: black;
-    padding: 15% 50% 5% 5%;
-    border-bottom: 80px solid $primary;
+    padding: 50px 5% 50px 50%;
+    position: relative;
     p{
       color: white;
+    }
+    img{
+      position: absolute;
+      left: 5%;
+      bottom: 0;
+      width: 40%;
+      max-width: 180px;
     }
   }
   .footer{
@@ -156,8 +239,28 @@ body{
 }
 
 @media screen and(min-width: 768px) {
+  .maskiner{
+    height: 400px;
+    margin-top: 50px;
+  }
+  h1{
+    font-size: 4.5rem;
+  }
+  h3{
+    font-size: 3.5rem;
+  }
   .container-fluid{
+    .omFab {
+      padding: 10%;
+      .voresFabWrap {
+        width: 35%;
+        margin: 8%;
+      }
+    }
 
+    p{
+      font-size: 1.2rem;
+    }
     .navbar{
       display: block;
         .navbar-brand{
@@ -193,7 +296,9 @@ body{
 @media screen and(min-width: 1200px){
 
   .container-fluid{
-
+    p{
+      font-size: 1.5rem;
+    }
     .navbar{
       ul{
         justify-content: space-around;
@@ -227,62 +332,6 @@ body{
       }
     }
   }
-}
-
-.Overskrift2{
-  text-align: center;
-  font-size: 60px;
-}
-
-.Overskrift{
-  text-align: center;
-  font-size: 40px;
-}
-
-.underoverskrift{
-  padding: 0px 40px 0px 40px;
-}
-
-.Sort{
-  background-color: black;
-}
-.Grøn{
-  background-color: #B6EFAF ;
-}
-
-.knapsort{
-  background-color:$primary;
-  border-radius:28px;
-  border:1px solid $primary;
-  display:inline-block;
-  cursor:pointer;
-  color:black;
-  font-size:15px;
-  padding:7px 38px;
-  text-decoration:none;
-  margin-bottom: 10px;
-  margin-left: 60px;
-}
-
-.knapgrøn{
-  background-color:black;
-  border-radius:28px;
-  border:1px solid black;
-  display:inline-block;
-  cursor:pointer;
-  color:white;
-  font-size:15px;
-  padding:7px 38px;
-  text-decoration:none;
-  margin-bottom: 10px;
-  margin-left: 60px;
-}
-.maskiner{
-  height: 200px;
-  width: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 
