@@ -18,6 +18,7 @@ img{
 }
 
 .Overskrift{
+  margin-top: 50px;
   text-align: center;
   font-size: 40px;
 }
@@ -72,6 +73,35 @@ img{
   margin-right: auto;
 }
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
 
 body{
   margin: 0;
@@ -83,6 +113,30 @@ body{
   }
   .fa-envelope-square{
     font-size: 3rem;
+  }
+  .eller{
+    background-color: black;
+    h3{
+      color: white;
+    }
+  }
+  .fishermanWrap{
+    border-top: 40px solid black;
+    img{
+      top: -170px;
+      right: 5%;
+      width: 150px;
+    }
+  }
+  .mail{
+    padding:5% 10% 5% 10%;
+  }
+  .kontaktMain{
+    padding:0 10% 10% 10%;
+    p{
+      margin-right: 70%;
+      display: none;
+    }
   }
   .omFab{
     padding: 20%;
@@ -215,7 +269,7 @@ body{
       padding: 0;
       width: 100%;
       a{
-        width: 80%;
+        width: 75%;
         img{
           width: 80%;
           margin-left: 5%;
@@ -239,9 +293,17 @@ body{
 }
 
 @media screen and(min-width: 768px) {
+  .fishermanWrap{
+    .fisker{
+      top: -330px;
+      right: 5%;
+      width: 300px;
+    }
+  }
   .maskiner{
-    height: 400px;
+    height: 300px;
     margin-top: 50px;
+    margin-bottom: 50px;
   }
   h1{
     font-size: 4.5rem;
@@ -250,6 +312,13 @@ body{
     font-size: 3.5rem;
   }
   .container-fluid{
+    .kontaktMain{
+      padding:0 10% 10% 10%;
+      p{
+        margin-right: 70%;
+        display: block;
+      }
+    }
     .omFab {
       padding: 10%;
       .voresFabWrap {
@@ -284,6 +353,10 @@ body{
             border-radius: 5px;
             width: 110px;
             height: auto;
+            &:hover{
+              text-decoration: none;
+              color: $primary;
+            }
           }
         }
       }
@@ -295,6 +368,16 @@ body{
 
 @media screen and(min-width: 1200px){
 
+  .maskiner{
+    height: 400px;
+  }
+  .fishermanWrap{
+    .fisker{
+      top: -430px;
+      right: 5%;
+      width: 400px;
+    }
+  }
   .container-fluid{
     p{
       font-size: 1.5rem;
@@ -313,6 +396,10 @@ body{
             width: 110px;
             height: auto;
             color: $primary!important;
+            &:hover{
+              text-decoration: none;
+              color: white!important;
+            }
           }
         }
       }
@@ -332,6 +419,10 @@ body{
       }
     }
   }
+}
+
+.fa-envelope-square{
+  color: black;
 }
 
 
