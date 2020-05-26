@@ -4,13 +4,39 @@ $default: #FFFFFF;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-img{
-  width: 100%;
-}
 
 .gradient{
-  background:linear-gradient(135deg,#53a0fd 0%,#4161d4 100%)
+  background:linear-gradient(135deg,#53a0fd 0%,#4161d4 100%);
+  height: 1150px;
 }
 
+.btn-default{
+  background-color: white!important;
+}
 
+.fp-img{
+  position: absolute;
+  top: 1000px;
+  left: 50px;
+}
+
+.economic-img{
+  background: rgb(255,255,255);
+  background: linear-gradient(355deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 58%, rgba(255,166,0,1) 58%);
+}
+
+.economic{
+  -webkit-box-shadow: 19px 19px 42px -25px rgba(0,0,0,0.75);
+  -moz-box-shadow: 19px 19px 42px -25px rgba(0,0,0,0.75);
+  box-shadow: 19px 19px 42px -25px rgba(0,0,0,0.75);
+
+}
+
+.sized-box{
+  height: 50px;
+}
+
+.eco-btn{
+  background-color: #ffa600!important;
+}
 
