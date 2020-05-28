@@ -7,22 +7,66 @@ $default: #FFFFFF;
 
 .gradient{
   background:linear-gradient(135deg,#53a0fd 0%,#4161d4 100%);
-  height: 1150px;
 }
 
 .btn-default{
   background-color: white!important;
 }
 
+.small{
+  font-size: 13px;
+}
+
+.bg-gray{
+  background-color: #f0f0f0;
+}
+
+.bizz-bg{
+  background-color: #4161d4;
+}
+
+.rackbeat-fc{
+  color: #53a0fd;
+}
+
+.rackbeat-bg{
+  background-color: #53a0fd;
+}
+
+.b-footer{
+  height: 400px;
+}
+
+.footer-box{
+  top: -50px;
+}
+
+.create-user{
+  width: 200px!important;
+}
+
+.ml-25{
+  margin-left: 25%;
+}
+
 .fp-img{
-  position: absolute;
-  top: 1000px;
-  left: 50px;
+  padding-left: 10%;
+  max-width: 80%;
 }
 
 .economic-img{
   background: rgb(255,255,255);
   background: linear-gradient(355deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 58%, rgba(255,166,0,1) 58%);
+}
+
+.rackbeat-img{
+  background: rgb(255,255,255);
+  background: linear-gradient(355deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 58%, #53a0fd 58%);
+}
+
+.bizz-img{
+  background: rgb(255,255,255);
+  background: linear-gradient(355deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 58%, #4161d4 58%);
 }
 
 .economic{
@@ -38,5 +82,16 @@ $default: #FFFFFF;
 
 .eco-btn{
   background-color: #ffa600!important;
+}
+
+p{
+  font-size: 19px;
+}
+
+@media screen and (min-width: 700px) {
+  .fp-img{
+    max-width: 40%;
+    margin-left: 50%;
+  }
 }
 
